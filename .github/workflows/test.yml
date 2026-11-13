@@ -28,10 +28,11 @@ jobs:
 
       - name: Install, test and audit
         run: |
+          set -e
           for f in Formula/*.rb; do
             name=$(basename "$f" .rb)
             brew install "allco/tap/$name"
             brew test "allco/tap/$name"
-            brew audit --strict "allco/tap/$name" || echo "::warning::audit of $name failed"
+            brew audit --strict "allco/tap/$name"
             "$(brew --prefix)/bin/$name" --version
           done
