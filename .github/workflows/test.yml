@@ -35,4 +35,8 @@ jobs:
             brew test "allco/tap/$name"
             brew audit --strict "allco/tap/$name"
             "$(brew --prefix)/bin/$name" --version
+            # A Homebrew install must leave updates to brew.
+            out=$("$(brew --prefix)/bin/$name" --update </dev/null 2>&1 || true)
+            echo "$out"
+            grep -q "brew upgrade $name" <<<"$out"
           done
