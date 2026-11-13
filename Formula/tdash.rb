@@ -5,23 +5,23 @@ class Tdash < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/allco/tdash/releases/download/v1.5.0/tdash_v1.5.0_darwin_arm64.tar.gz"
-      sha256 "3833517936096f3469d3eec40bd385ebad8b6b1fabe7266ed40bb988319d2fff"
+      url "https://github.com/allco/tdash/releases/download/v1.6.0/tdash_v1.6.0_darwin_arm64.tar.gz"
+      sha256 "0258a613de20a996cfc572283bff8ecafd31d97a82201f574142983decd6e2e1"
     end
     on_intel do
-      url "https://github.com/allco/tdash/releases/download/v1.5.0/tdash_v1.5.0_darwin_amd64.tar.gz"
-      sha256 "bcebd252e1fdda511e595e36dcb12494c98361e6529addd99cfde044ca73e171"
+      url "https://github.com/allco/tdash/releases/download/v1.6.0/tdash_v1.6.0_darwin_amd64.tar.gz"
+      sha256 "30e5ce632161607cf846cf0530d9f4141b4cdf48b774bb1cfde32041fd1848af"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/allco/tdash/releases/download/v1.5.0/tdash_v1.5.0_linux_arm64.tar.gz"
-      sha256 "611909b0333beadcbe56a1928d26ef5634bea89b39bb684e85170b4c1bbc745f"
+      url "https://github.com/allco/tdash/releases/download/v1.6.0/tdash_v1.6.0_linux_arm64.tar.gz"
+      sha256 "c69d9ca5a5462d9d6d7939638b49b327a7e0724701fd8bc946fffafa99d34d93"
     end
     on_intel do
-      url "https://github.com/allco/tdash/releases/download/v1.5.0/tdash_v1.5.0_linux_amd64.tar.gz"
-      sha256 "b21f9d66305511a5c99a5bbde506831981ed1e21834836704446d89d657928aa"
+      url "https://github.com/allco/tdash/releases/download/v1.6.0/tdash_v1.6.0_linux_amd64.tar.gz"
+      sha256 "7491d9bb41e552643382a056c41ef38ab04f88532a0b17da932462dd70a71047"
     end
   end
 
