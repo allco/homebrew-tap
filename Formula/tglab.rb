@@ -5,23 +5,23 @@ class Tglab < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/allco/tglab/releases/download/v1.2.0/tglab_v1.2.0_darwin_arm64.tar.gz"
-      sha256 "109e6f9db84a05e2aa801da333c73e2f3d365f60b2eb3eaea6f26c7d60383311"
+      url "https://github.com/allco/tglab/releases/download/v1.3.0/tglab_v1.3.0_darwin_arm64.tar.gz"
+      sha256 "8f0671fd33973d009a7d6131f80140cf869982efad06ff306c183aa8b25bdfc7"
     end
     on_intel do
-      url "https://github.com/allco/tglab/releases/download/v1.2.0/tglab_v1.2.0_darwin_amd64.tar.gz"
-      sha256 "74a36ead55557ea8c6c1c7cb3fcb3299f2feaa3c8e77823853ba30e4cd0f1f38"
+      url "https://github.com/allco/tglab/releases/download/v1.3.0/tglab_v1.3.0_darwin_amd64.tar.gz"
+      sha256 "db23fc6597bdbf47943e5122026e681091a21e5febbec90946f761b81277fd58"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/allco/tglab/releases/download/v1.2.0/tglab_v1.2.0_linux_arm64.tar.gz"
-      sha256 "9a6bb937386d315bdf97d147707b9b88d2017c037bfe94a8c2d0b38b21a8bd1d"
+      url "https://github.com/allco/tglab/releases/download/v1.3.0/tglab_v1.3.0_linux_arm64.tar.gz"
+      sha256 "9f0330c1183318eb295465fb19384250c4c913dabdfc89eecbe0d8605bbfadc9"
     end
     on_intel do
-      url "https://github.com/allco/tglab/releases/download/v1.2.0/tglab_v1.2.0_linux_amd64.tar.gz"
-      sha256 "450416367cee88664f79f372fec3d24845b0537b847cc7d98c309eeb7f99aa92"
+      url "https://github.com/allco/tglab/releases/download/v1.3.0/tglab_v1.3.0_linux_amd64.tar.gz"
+      sha256 "cc46e7a5628da43ccd73440b6bd012913512bcb4f4c0b0753550c2d4bfd80b10"
     end
   end
 
