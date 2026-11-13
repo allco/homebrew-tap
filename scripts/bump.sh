@@ -6,7 +6,6 @@ cd "$(dirname "$0")/.."
 
 app=${1:?usage: bump.sh <tdash|tglab> <tag>}
 tag=${2:?usage: bump.sh <tdash|tglab> <tag>}
-version=${tag#v}
 
 case $app in
 tdash)
@@ -30,7 +29,7 @@ sha() {
   [ -n "$s" ] || { echo "$f is not in $tag's checksums.txt" >&2; exit 1; }
   echo "$s"
 }
-url() { echo "$base/${app}_${tag}_$1.tar.gz" | sed "s|$tag|v#{version}|g"; }
+url() { echo "$base/${app}_${tag}_$1.tar.gz"; }
 
 class=$(tr '[:lower:]' '[:upper:]' <<<"${app:0:1}")${app:1}
 cat >"Formula/$app.rb" <<RUBY
@@ -38,7 +37,6 @@ cat >"Formula/$app.rb" <<RUBY
 class $class < Formula
   desc "$desc"
   homepage "https://github.com/allco/$app"
-  version "$version"
 
   on_macos do
     on_arm do
